@@ -1,4 +1,6 @@
 import 'globals.css';
+import Navbar from './Navbar';
+import ScrollToTopButton from './ScrollToTopButton.js';
 
 export const medata = {
     title: 'CABOHYUN',
@@ -12,7 +14,10 @@ export default function RootLayout({ childen }) {
     return (
         <html lang="pt-BR">
             <body style={{ backgroundColor: 'black', margin: 0 }}>
+                <Navbar />
+                {childen}
+                <ScrollToTopButton />
             </body>
         </html>
-    )
+    );
 }
